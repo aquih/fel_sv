@@ -37,7 +37,7 @@ class AccountMove(models.Model):
     def requiere_certificacion_sv(self, certificador=''):
         self.ensure_one()
         factura = self
-        requiere = factura.journal_id.generar_fel_sv and factura.amount_total != 0
+        requiere = factura.is_invoice() and factura.journal_id.generar_fel_sv and factura.amount_total != 0 and factura.company_id.country_id.code == 'SV'
         if certificador:
             requiere = requiere and ( factura.company_id.certificador_fel_sv == certificador or not factura.company_id.certificador_fel_sv )
         return requiere
