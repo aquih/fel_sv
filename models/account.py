@@ -30,7 +30,7 @@ class AccountInvoice(models.Model):
     motivo_fel_sv = fields.Char(string='Motivo FEL SV')
     tipo_anulacion_fel_sv = fields.Char(string='Tipo de Anulación FEL SV')
     factura_nueva_fel_sv_id = fields.Many2one('account.invoice', string="Factura Nueva FEL SV")
-    factura_original_fel_sv_id = fields.Many2one('account.move', string="Factura Original FEL SV")
+    factura_original_fel_sv_id = fields.Many2one('account.invoice', string="Factura Original FEL SV")
     responsable_fel_sv_id = fields.Many2one('res.partner', string="Responsable FEL SV")
     solicitante_fel_sv_id = fields.Many2one('res.partner', string="Solicitante FEL SV")
     documento_xml_fel_sv = fields.Binary('Documento XML FEL SV', copy=False)
