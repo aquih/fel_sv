@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+        
+    <record model="ir.ui.view" id="view_move_form_fel_sv">
+        <field name="name">account.move.form.fel_sv</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@id='invoice_tab']" position="inside">
+                <group>
+                    <group>
+                        <field name="firma_fel_sv"/>
+                        <field name="condicion_pago_fel_sv"/>
+                        <field name="forma_pago_fel_sv"/>
+                        <field name="factura_original_fel_sv_id"/>
+                        <field name="motivo_fel_sv"/>
+                        <field name="tipo_anulacion_fel_sv"/>
+                        <field name="factura_nueva_fel_sv_id"/>
+                    </group>
+                    <group>
+                        <field name="documento_xml_fel_sv_name" invisible="1"/>
+                        <field name="documento_xml_fel_sv" readonly="1" filename="documento_xml_fel_name"/>
+                        <field name="resultado_xml_fel_sv_name" invisible="1"/>
+                        <field name="resultado_xml_fel_sv" readonly="1" filename="resultado_xml_fel_name"/>
+                        <field name="responsable_fel_sv_id"/>
+                        <field name="solicitante_fel_sv_id"/>
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+    
+    <record model="ir.ui.view" id="journal_form_fel_sv">
+        <field name="name">account.journal.form.fel_sv</field>
+        <field name="model">account.journal</field>
+        <field name="inherit_id" ref="account.view_account_journal_form"/>
+        <field name="arch" type="xml">
+            <page name="extra_sv" position="inside">
+                <group string="FEL SV">
+                    <group>
+                        <field name="generar_fel_sv"/>
+                        <field name="tipo_documento_fel_sv"/>
+                        <field name="condicion_pago_fel_sv"/>
+                    </group>
+                    <group>
+                        <field name="forma_pago_fel_sv"/>
+                        <field name="codigo_establecimiento_sv"/>
+                        <field name="error_en_historial_fel_sv"/>
+                        <field name="enviar_lineas_en_cero_fel_sv"/>
+                    </group>
+                </group>
+            </page>
+        </field>
+    </record>
+    
+    <record model="ir.ui.view" id="view_tax_form_fel_sv">
+        <field name="name">account.tax.form.fel_sv</field>
+        <field name="model">account.tax</field>
+        <field name="inherit_id" ref="account.view_tax_form"/>
+        <field name="arch" type="xml">
+            <data>
+                <field name="tax_group_id" position="after">
+                    <field name="codigo_fel_sv"/>
+                </field>
+            </data>
+        </field>
+    </record>
+    
+    <record id="product_template_only_form_view_fel_sv" model="ir.ui.view">
+        <field name="name">product.template.product.form.fel_sv</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <data>
+                <field name="taxes_id" position="after">
+                    <field name="codigo_unidad_medida_fel_sv"/>
+                </field>
+            </data>
+        </field>
+    </record>
+        
+</openerp>
