@@ -33,7 +33,7 @@
     <record model="ir.ui.view" id="journal_form_fel_sv">
         <field name="name">account.journal.form.fel_sv</field>
         <field name="model">account.journal</field>
-        <field name="inherit_id" ref="account.view_account_journal_form"/>
+        <field name="inherit_id" ref="l10n_sv_extra.l10n_sv_view_account_journal_form"/>
         <field name="arch" type="xml">
             <page name="extra_sv" position="inside">
                 <group string="FEL SV">
