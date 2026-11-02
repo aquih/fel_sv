@@ -18,9 +18,9 @@ class AccountMove(models.Model):
     responsable_fel_sv_id = fields.Many2one('res.partner', string="Responsable FEL SV")
     solicitante_fel_sv_id = fields.Many2one('res.partner', string="Solicitante FEL SV")
     documento_xml_fel_sv = fields.Binary('Documento XML FEL SV', copy=False)
-    documento_xml_fel_sv_name = fields.Char('Nombre documento XML FEL SV', default='documento_xml_fel.xml', size=32)
+    documento_xml_fel_sv_name = fields.Char('Nombre documento XML FEL SV', default='documento_fe.json', size=32)
     resultado_xml_fel_sv = fields.Binary('Resultado XML FEL SV', copy=False)
-    resultado_xml_fel_sv_name = fields.Char('Nombre resultado XML FEL SV', default='resultado_xml_fel.xml', size=32)
+    resultado_xml_fel_sv_name = fields.Char('Nombre resultado XML FEL SV', default='resultado_fe.json', size=32)
     certificador_fel_sv = fields.Char('Certificador FEL SV', copy=False)
 
     def num_a_letras_sv(self, amount):
