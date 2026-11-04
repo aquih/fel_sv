@@ -2,7 +2,7 @@
 
 {
     'name': 'FEL El Salvador',
-    'version': '2.2',
+    'version': '2.3',
     'category': 'Custom',
     'description': """ Campos y funciones base para la facturación electrónica en El Salvador """,
     'author': 'aquíH',
