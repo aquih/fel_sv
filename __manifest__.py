@@ -2,11 +2,11 @@
 
 {
     'name': 'FEL El Salvador',
-    'version': '2.4',
+    'version': '2.5',
     'category': 'Custom',
     'description': """ Campos y funciones base para la facturación electrónica en El Salvador """,
     'author': 'aquíH',
-    'website': 'http://aquih.com/',
+    'website': 'http://www.aquih.com/',
     'depends': ['l10n_sv_extra'],
     'data': [
         'views/account_views.xml',

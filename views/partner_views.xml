@@ -14,8 +14,8 @@
                         <field name="nit_facturacion_fel_sv"/>
                         <field name="tipo_documento_fel_sv"/>
                         <field name="departamento_fel_sv"/>
-                        <field name="municipio_fel_sv"/>
                         <field name="distrito_fel_sv"/>
+                        <field name="municipio_fel_sv"/>
                         <field name="descripcion_actividad_fel_sv"/>
                     </field>
                 </data>
